@@ -1,0 +1,19 @@
+footer{ position:relative; overflow:hidden; border-radius:2rem 2rem 0 0; background:#0a0a0a; color:#fff }
+footer .shell{ position:relative; z-index:10; padding-top:5rem; padding-bottom:2.5rem } @media (min-width:1024px){ footer .shell{ padding-top:6rem } }
+.fcta{ display:flex; flex-direction:column; gap:2rem; border-bottom:1px solid rgba(255,255,255,.1); padding-bottom:4rem }
+@media (min-width:1024px){ .fcta{ flex-direction:row; align-items:flex-end; justify-content:space-between } }
+.fcta h2{ max-width:16ch; font-size:2.25rem; font-weight:600; letter-spacing:-.02em; line-height:1.05 }
+@media (min-width:640px){ .fcta h2{ font-size:3rem } } @media (min-width:768px){ .fcta h2{ font-size:3.75rem } }
+.fcols{ display:grid; grid-template-columns:1fr; gap:3rem; padding-block:4rem }
+@media (min-width:768px){ .fcols{ grid-template-columns:1fr 1fr } } @media (min-width:1024px){ .fcols{ grid-template-columns:repeat(4,1fr) } }
+.fbrand .logo{ margin-bottom:1rem } .fbrand p{ max-width:20rem; font-size:.875rem; color:rgba(255,255,255,.55) }
+.fcol h4{ font-size:.75rem; text-transform:uppercase; letter-spacing:.025em; color:rgba(255,255,255,.4); font-weight:500; margin-bottom:1.25rem }
+.fcol ul{ display:flex; flex-direction:column; gap:.75rem; font-size:.875rem }
+.alink{ display:inline-flex }
+.alink span{ opacity:.65; transition:transform .35s var(--ease-hover), opacity .35s var(--ease-hover) }
+@media (hover:hover){ .alink:hover span{ transform:translateX(4px); opacity:1 } .legal .alink:hover span{ transform:translateX(3px) } }
+.legal .alink span{ opacity:.7 }
+.legal{ display:flex; flex-direction:column; align-items:center; justify-content:space-between; gap:1rem; border-top:1px solid rgba(255,255,255,.1); padding-top:2rem; font-size:.75rem; color:rgba(255,255,255,.45) }
+@media (min-width:640px){ .legal{ flex-direction:row } }
+.legal div{ display:flex; gap:1.5rem }
+.fwm{ position:absolute; inset-inline:0; bottom:-1.5rem; z-index:0; text-align:center; pointer-events:none; user-select:none; font-weight:700; line-height:1; font-size:13rem; color:rgba(255,255,255,.05); white-space:nowrap }

@@ -1,0 +1,20 @@
+#about .shell{ display:grid; grid-template-columns:1fr; align-items:center; gap:3rem; padding-block:5rem }
+@media (min-width:1024px){ #about .shell{ grid-template-columns:1fr 1fr; padding-block:7rem } }
+.globe-block{ position:relative; min-height:14rem; display:flex; flex-direction:column; justify-content:space-between }
+@media (min-width:1024px){ .globe-block{ min-height:20rem } }
+.globe-bg{ position:absolute; left:-1rem; top:50%; transform:translateY(-50%); font-size:12rem; color:rgba(17,17,17,.1) }
+@media (min-width:640px){ .globe-bg{ font-size:16rem } } @media (min-width:1024px){ .globe-bg{ left:-1.5rem; font-size:20rem } }
+.globe-block .eyebrow{ position:relative }
+.gnote{ position:relative; display:flex; align-items:center; gap:.75rem; font-size:.875rem; color:rgba(17,17,17,.7) }
+.gnote svg{ font-size:1.5rem; color:#111 } .gnote span{ max-width:14rem }
+.statement{ display:flex; flex-direction:column; gap:2.5rem }
+.statement h2{ font-size:1.5rem; font-weight:500; line-height:1.35; letter-spacing:-.01em }
+@media (min-width:640px){ .statement h2{ font-size:1.875rem } }
+.statement h2 .mut{ color:#8d8d8d }
+.sfoot{ display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:1.5rem; border-top:1px solid #e6e5e2; padding-top:1.5rem }
+.sfoot .lb{ font-size:.875rem; color:rgba(17,17,17,.45); margin-bottom:.5rem }
+.socials{ display:flex; gap:.5rem }
+.socials a{ width:2.25rem; height:2.25rem; display:grid; place-items:center; border-radius:9999px; font-size:.875rem; background:#f1f0ee; color:rgba(17,17,17,.7) }
+.socials a.acc{ background:#b15f2c; color:#fff }
+.socials a svg{ transition:transform .35s var(--ease-hover) }
+@media (hover:hover){ .socials a:hover svg{ transform:scale(1.18) } }

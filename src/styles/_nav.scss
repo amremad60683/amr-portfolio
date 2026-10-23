@@ -1,0 +1,16 @@
+.nav-ov{ position:fixed; inset:0; z-index:115; display:flex; flex-direction:column; background:#0a0a0a; color:#fff; opacity:0; visibility:hidden; transition:opacity .45s var(--ease-head), visibility 0s .45s }
+.nav-ov.open{ opacity:1; visibility:visible; transition:opacity .45s var(--ease-head) }
+.nav-ov .top{ display:flex; align-items:center; justify-content:space-between; padding-block:1.25rem } @media (min-width:640px){ .nav-ov .top{ padding-block:1.5rem } }
+.close-btn{ display:inline-flex; align-items:center; gap:.5rem; border:1px solid rgba(255,255,255,.15); border-radius:.875rem; padding:.5rem 1rem; font-size:.75rem; font-weight:500; text-transform:uppercase; letter-spacing:.05em; color:rgba(255,255,255,.7); transition:all .3s }
+.close-btn:hover{ border-color:rgba(255,255,255,.4); color:#fff } .close-btn svg{ font-size:.875rem }
+.nav-ov nav{ flex:1; display:flex; flex-direction:column; justify-content:center }
+.nav-ov ul{ display:flex; flex-direction:column; gap:.25rem }
+.nav-ov li button{ width:100%; display:flex; align-items:baseline; gap:1rem; padding-block:.5rem; text-align:left; font-size:2.25rem; font-weight:600; letter-spacing:-.02em; transform:translateY(1rem); opacity:0; transition:all .5s ease-out; transition-delay:calc(var(--i) * 45ms + 80ms) }
+@media (min-width:640px){ .nav-ov li button{ font-size:3.75rem } }
+.nav-ov.open li button{ transform:none; opacity:1 }
+.nav-ov li small{ font-size:1rem; font-weight:400; color:rgba(255,255,255,.3); transition:color .3s }
+.nav-ov li span{ color:rgba(255,255,255,.7); transition:color .3s }
+.nav-ov li button:hover small{ color:#cf8047 } .nav-ov li button:hover span{ color:#fff }
+.nav-ov .bot{ display:flex; flex-direction:column; gap:.75rem; border-top:1px solid rgba(255,255,255,.1); padding-block:1.5rem; font-size:.75rem; text-transform:uppercase; letter-spacing:.025em; color:rgba(255,255,255,.45) }
+@media (min-width:640px){ .nav-ov .bot{ flex-direction:row; justify-content:space-between } }
+.nav-ov .bot button{ color:rgba(255,255,255,.7); text-transform:uppercase; letter-spacing:.025em; font-size:.75rem } .nav-ov .bot button:hover{ color:#fff; text-decoration:underline }

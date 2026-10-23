@@ -1,0 +1,22 @@
+.hv{ display:inline-flex; transition:transform .35s var(--ease-hover), opacity .35s var(--ease-hover), background-color .35s var(--ease-hover), padding .45s var(--ease-spring) }
+@media (hover:hover) and (pointer:fine){
+  .hv-scale:hover .hv-s, .hv-s:hover{ transform:scale(1.04) }
+  .pill-root:hover .pill{ transform:scale(1.04) }
+  .pill-root:hover .arrow-r{ transform:translate(3px,0) }
+  .pill-root:hover .arrow-ur{ transform:translate(2px,-2px) }
+}
+.pill-root{ display:inline-block }
+.pill{ display:inline-flex; align-items:center; gap:.75rem; border-radius:9999px; font-size:.875rem; font-weight:500; white-space:nowrap; transition:transform .35s var(--ease-hover) }
+.pill.arr{ padding:.375rem .375rem .375rem 1.5rem }
+.pill.noarr{ padding:.875rem 1.75rem }
+.pill.dark{ background:#0a0a0a; color:#fff }
+.pill.light{ background:#f1f0ee; color:#111 }
+.pill.outline{ border:1px solid #e6e5e2; background:transparent; color:#111 }
+.pill.outline-w{ border:1px solid rgba(255,255,255,.3); background:transparent; color:#fff }
+.pill .badge{ width:2.25rem; height:2.25rem; display:grid; place-items:center; border-radius:9999px; font-size:1rem; background:#0a0a0a; color:#fff }
+.pill.dark .badge{ background:#fff; color:#0a0a0a }
+.pill .badge svg{ transition:transform .35s var(--ease-hover) }
+
+.eyebrow{ display:inline-flex; align-items:center; gap:.5rem; font-size:.875rem; font-weight:500; color:rgba(17,17,17,.7) }
+.eyebrow::before{ content:""; width:.375rem; height:.375rem; border-radius:9999px; background:rgba(17,17,17,.5) }
+.eyebrow.light{ color:rgba(255,255,255,.7) } .eyebrow.light::before{ background:rgba(255,255,255,.6) }

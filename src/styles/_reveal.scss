@@ -1,0 +1,8 @@
+[appReveal]:not(.lines):not(.words){ opacity:0; transform:translate3d(0,var(--ty,12px),0) scale(var(--sc,1)); transition:opacity .8s var(--ease-spring) var(--d,0ms), transform .8s var(--ease-spring) var(--d,0ms) }
+[appReveal]:not(.lines):not(.words).in{ opacity:var(--to,1); transform:none }
+.ln{ display:block; overflow:hidden; padding-bottom:.14em; margin-bottom:-.14em }
+.ln > span{ display:block; transform:translate3d(0,100%,0); opacity:0; transition:transform .9s var(--ease-line), opacity .9s var(--ease-line); transition-delay:calc(var(--d,0ms) + var(--i,0) * var(--ls,0ms)) }
+.lines.in .ln > span{ transform:none; opacity:1 }
+.lines.center .ln{ text-align:center }
+.wd{ display:inline-block; transform:translate3d(0,24px,0); opacity:0; transition:transform .7s var(--ease-word), opacity .7s var(--ease-word); transition-delay:calc(var(--w) * 35ms) }
+.words.in .wd{ transform:none; opacity:1 }

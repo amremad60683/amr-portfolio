@@ -1,0 +1,26 @@
+.modal{ position:fixed; inset:0; z-index:110; display:flex; align-items:flex-end; justify-content:center; padding:1rem; background:rgba(17,17,17,.3); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); opacity:0; visibility:hidden; transition:opacity .45s var(--ease-head), visibility 0s .45s }
+@media (min-width:640px){ .modal{ align-items:center } }
+.modal.open{ opacity:1; visibility:visible; transition:opacity .45s var(--ease-head) }
+.mpanel{ position:relative; width:100%; max-width:32rem; overflow:hidden; border-radius:2rem; background:#fff; padding:1.5rem; box-shadow:0 25px 50px -12px rgba(0,0,0,.25), 0 0 0 1px #e6e5e2; transform:translateY(28px); transition:transform .55s var(--ease-head) }
+@media (min-width:640px){ .mpanel{ padding:2rem } }
+.modal.open .mpanel{ transform:none } .modal.closing .mpanel{ transform:translateY(18px) }
+.mclose{ position:absolute; right:1rem; top:1rem; width:2.25rem; height:2.25rem; display:grid; place-items:center; border-radius:9999px; background:#f1f0ee; color:rgba(17,17,17,.6); transition:all .2s }
+.mclose:hover{ background:#e3e2df; color:#111 }
+.mhead{ margin-bottom:1.5rem; display:flex; flex-direction:column; gap:.375rem }
+.mhead .k{ display:inline-flex; align-items:center; gap:.5rem; font-size:.875rem; font-weight:500; color:rgba(17,17,17,.6) }
+.mhead .k::before{ content:""; width:.375rem; height:.375rem; border-radius:9999px; background:#b15f2c }
+.mhead h2, .msucc h2{ font-size:1.5rem; font-weight:600; letter-spacing:-.01em } @media (min-width:640px){ .mhead h2{ font-size:1.875rem } }
+.mform{ display:flex; flex-direction:column; gap:1rem }
+.mform label > span{ display:block; margin-bottom:.375rem; font-size:.75rem; font-weight:500; text-transform:uppercase; letter-spacing:.025em; color:rgba(17,17,17,.5) }
+.mform input, .mform textarea{ width:100%; border:1px solid #e6e5e2; background:rgba(241,240,238,.5); border-radius:.875rem; padding:.75rem 1rem; font:inherit; font-size:.875rem; outline:none; transition:all .2s; resize:none }
+.mform input:focus, .mform textarea:focus{ border-color:rgba(17,17,17,.3); background:#fff }
+.mrow{ margin-top:.5rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; font-size:.75rem; color:rgba(17,17,17,.45) }
+.msucc{ display:none; flex-direction:column; align-items:center; text-align:center; gap:1rem; padding-block:2rem }
+.mpanel.done .msucc{ display:flex } .mpanel.done .mformwrap{ display:none }
+.msucc .ok{ width:3.5rem; height:3.5rem; display:grid; place-items:center; border-radius:9999px; background:#0a0a0a; color:#cf8047; font-size:1.5rem }
+.msucc p{ max-width:32ch; font-size:.875rem; color:rgba(17,17,17,.6) }
+
+.flip{ transform:rotate(180deg) }
+.caret{ font-size:.75rem; opacity:.6; font-style:normal }
+.status .scroll{ display:inline-flex; gap:.5rem }
+button.alink{ font-size:inherit }

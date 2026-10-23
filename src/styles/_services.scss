@@ -1,0 +1,12 @@
+#services .shell{ padding-block:5rem } @media (min-width:1024px){ #services .shell{ padding-block:7rem } }
+#services .h2{ margin:1.25rem 0 3rem; max-width:16ch } @media (min-width:640px){ #services .h2{ margin-bottom:3.5rem } }
+.srow-li{ border-top:1px solid #e6e5e2; --ty:24px } .srow-li:first-child{ border-top:0 }
+.srow{ width:100%; text-align:left; display:flex; align-items:center; gap:1rem; border-radius:1.25rem; padding:1.5rem; background:rgba(241,240,238,0); transition:background-color .5s var(--ease-spring), padding .5s var(--ease-spring) }
+@media (min-width:640px){ .srow{ gap:1.5rem; padding-block:2rem } }
+@media (hover:hover){ .srow:hover{ background:rgba(241,240,238,1); padding-left:2rem; padding-right:1.25rem } .srow:hover .sbadge{ transform:translateX(5px) } }
+.srow .idx{ width:1.75rem; font-size:.875rem; font-weight:500; color:rgba(17,17,17,.4) } @media (min-width:640px){ .srow .idx{ width:2.5rem } }
+.srow h3{ flex:1; font-size:1.5rem; font-weight:500; letter-spacing:-.01em }
+@media (min-width:640px){ .srow h3{ font-size:1.875rem } } @media (min-width:768px){ .srow h3{ font-size:2.25rem } }
+.srow p{ display:none; max-width:20rem; font-size:.875rem; color:rgba(17,17,17,.55) } @media (min-width:1024px){ .srow p{ display:block } }
+.sbadge{ width:2.5rem; height:2.5rem; display:grid; place-items:center; border-radius:9999px; background:#0a0a0a; color:#fff; flex:none; transition:transform .35s var(--ease-hover) }
+@media (min-width:640px){ .sbadge{ width:3rem; height:3rem } }

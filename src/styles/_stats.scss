@@ -1,0 +1,11 @@
+#stats .shell{ padding-bottom:5rem } @media (min-width:1024px){ #stats .shell{ padding-bottom:7rem } }
+.spanel{ border-radius:2rem; background:#0a0a0a; padding:3rem 1.5rem; color:#fff; --ty:40px; --sc:.99 }
+@media (min-width:640px){ .spanel{ padding:4rem 2rem } } @media (min-width:768px){ .spanel{ padding-inline:4rem } }
+.spanel h2{ margin-top:1rem; max-width:20ch; font-size:1.875rem; font-weight:500; letter-spacing:-.01em; line-height:1.15 }
+@media (min-width:768px){ .spanel h2{ font-size:2.25rem } }
+.sgrid{ margin-top:3.5rem; display:grid; grid-template-columns:repeat(2,1fr); column-gap:2rem; row-gap:3rem }
+@media (min-width:1024px){ .sgrid{ grid-template-columns:repeat(4,1fr) } }
+.sgrid li{ --ty:20px }
+.sgrid .num{ font-size:3rem; font-weight:600; letter-spacing:-.02em; line-height:1 }
+@media (min-width:640px){ .sgrid .num{ font-size:3.75rem } } @media (min-width:768px){ .sgrid .num{ font-size:4.5rem } }
+.sgrid .lab{ margin-top:.75rem; font-size:.875rem; color:rgba(255,255,255,.55) }

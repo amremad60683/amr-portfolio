@@ -1,0 +1,23 @@
+.header{ display:block; position:absolute; inset-inline:0; top:0; z-index:50; color:#fff; opacity:0; transform:translateY(-14px); transition:opacity .7s var(--ease-head) .15s, transform .7s var(--ease-head) .15s }
+.header.shown{ opacity:1; transform:none }
+.header .shell{ display:flex; align-items:center; justify-content:space-between; gap:1.5rem; padding-block:1.25rem }
+@media (min-width:640px){ .header .shell{ padding-block:1.5rem } }
+.logo{ display:flex; align-items:center; gap:.5rem; font-size:1.125rem; font-weight:600; letter-spacing:-.01em }
+.logo svg{ font-size:1.25rem; color:#cf8047 }
+.pnav{ display:none }
+@media (min-width:1024px){ .pnav{ display:flex } }
+.pnav ul{ display:flex; gap:2rem; font-size:.875rem; font-weight:500 }
+.pnav button span{ display:inline-flex; gap:.3rem; opacity:.8; transition:transform .35s var(--ease-hover), opacity .35s var(--ease-hover) }
+.pnav button:hover span, .pnav button[aria-current] span{ opacity:1 }
+@media (hover:hover){ .pnav button:hover span{ transform:translateY(-2px) } }
+.hright{ display:flex; align-items:center; gap:.75rem }
+.chip{ display:none; align-items:center; gap:.75rem; border:1px solid rgba(255,255,255,.18); background:rgba(10,10,10,.3); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px); border-radius:.875rem; padding:.5rem .75rem; font-size:.75rem; color:rgba(255,255,255,.7) }
+@media (min-width:768px){ .chip{ display:flex } }
+.chip .lbl{ color:rgba(255,255,255,.45) } .chip .t{ min-width:3.5rem; font-weight:500; color:#fff } .chip .sep{ color:rgba(255,255,255,.3) } .chip .dt{ font-weight:500 }
+.menu-btn{ border:1px solid rgba(255,255,255,.18); background:rgba(10,10,10,.3); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px); border-radius:.875rem; transition:background .3s }
+.menu-btn:hover{ background:rgba(10,10,10,.55) }
+.menu-btn > span{ display:flex; align-items:center; gap:.5rem; padding:.5rem 1rem; font-size:.75rem; font-weight:500; text-transform:uppercase; letter-spacing:.05em; transition:transform .35s var(--ease-hover) }
+@media (hover:hover){ .menu-btn:hover > span{ transform:scale(1.05) } .logo-btn:hover .logo{ transform:scale(1.04) } }
+.logo-btn .logo{ transition:transform .35s var(--ease-hover) }
+.menu-btn svg{ font-size:.875rem }
+.menu-word{ display:none } @media (min-width:640px){ .menu-word{ display:inline } }

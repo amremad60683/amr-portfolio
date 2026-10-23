@@ -1,0 +1,15 @@
+/* Global styles, one partial per section — see src/styles/. */
+@use 'styles/base';
+@use 'styles/reveal';
+@use 'styles/hovers';
+@use 'styles/loader';
+@use 'styles/header';
+@use 'styles/hero';
+@use 'styles/about';
+@use 'styles/create';
+@use 'styles/portfolio';
+@use 'styles/services';
+@use 'styles/stats';
+@use 'styles/footer';
+@use 'styles/nav';
+@use 'styles/modal';

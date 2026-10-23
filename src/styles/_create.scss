@@ -1,0 +1,9 @@
+.band{ display:flex; flex-direction:column; gap:.75rem; padding-block:2.5rem }
+@media (min-width:640px){ .band{ flex-direction:row; gap:1rem } }
+.band li{ flex:1; --ty:28px }
+.band .tl{ display:grid; place-items:center; height:6rem; border-radius:9999px; font-size:1.875rem; font-weight:500; transition:transform .4s var(--ease-hover) }
+@media (min-width:640px){ .band .tl{ height:10rem; font-size:2.25rem } }
+@media (hover:hover){ .band .tl:hover{ transform:scale(1.03) } }
+.tl.light{ background:#f1f0ee } .tl.accent{ background:linear-gradient(to bottom right,#cf8047,#97501f); color:#fff }
+.tl.dark{ background:#0a0a0a; color:#fff; font-size:2.25rem } @media (min-width:640px){ .band .tl.dark{ font-size:3rem } }
+.tl.ghost{ background:rgba(241,240,238,.6); color:rgba(17,17,17,.35) }
